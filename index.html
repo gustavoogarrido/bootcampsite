@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootcamp Site- Assinaturas</title>
 
     <style>
-        body{
+        body {
             background-color: #F5F5F5;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .container{
+
+        .container {
             background-color: #E9E9E9;
             margin: auto;
             width: 600px;
@@ -18,52 +20,113 @@
             border-radius: 5px;
             overflow: hidden;
         }
-        .header{
+
+        .header {
             padding: 40px;
         }
-        .flex-container{
+
+        .flex-container {
             display: flex;
-            background-color: #006868;
-            justify-content: space-around;
-            padding: 20px;
+            color: #FFF;
         }
-        .header-title{
+
+        .header-title {
             color: #006F6F;
             font-size: 32px;
             font-weight: 700;
             margin-bottom: 20px;
         }
-        .header-subtitle{
+
+        .header-subtitle {
             color: #2699A7;
             font-size: 20px;
             font-weight: 500;
             margin-bottom: 15px;
         }
+
+        .column1 {
+            background-color: #006868;
+            padding: 20px;
+            width: 50%;
+        }
+
+        .column1-title {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .column1-firstcontent {
+            padding-top: 20px;
+        }
+
+        .price {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .month {
+            font-size: 15px;
+            font-style: italic;
+            margin-left: 15px;
+        }
+
+        .column1-button {
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 4px;
+            background-color: #CCCCCC;
+            color: #006868;
+            padding: 15px 32px;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .column1-button:hover{
+            background-color: #E9E9E9;
+        }
+
+        .column2 {
+            background-color: #009e9e;
+            width: 50%;
+        }
     </style>
 
 </head>
+
 <body>
-    <div class = "container">
-        <div class = "header">
+    <div class="container">
+        <div class="header">
             <div class="header-title">
                 Entre para a nossa comunidade!
             </div>
             <div class="header-subtitle">
-                Faça a sua assinatura agora e ganhe 30% de desconto! 
+                Faça a sua assinatura agora e ganhe 30% de desconto!
             </div>
             <div>
                 Faça parte da nossa comunidade de desenvolvedores.<br>
                 Tenha suporte da nossa equipe e cresça mais rápido na sua carreira
             </div>
         </div>
-        <div class = "flex-container">
-            <div>
-                Coluna 1
+        <div class="flex-container">
+            <div class="column1">
+                <div class="column1-title">
+                    Assinatura mensal:
+                </div>
+                <div class="column1-firstcontent">
+                    <span class="price">R$ 99,99</span>
+                    <span class="month">por mês.</span>
+                    <br>Cancele a qualquer momento.
+                </div>
+                <div>
+                    <button class="column1-button">Assine Agora</button>
+                </div>
             </div>
-            <div>
+            <div class="column2">
                 Coluna 2
             </div>
         </div>
     </div>
 </body>
+
 </html>
