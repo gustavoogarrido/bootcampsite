@@ -2,6 +2,43 @@
             background-color: #F5F5F5;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        
+        button {
+            margin-top: 1.2rem;
+            width: 100%;
+            padding: 0.9rem 2rem;
+            color: #006868;
+            background-color: #CCCCCC;
+            font-size: 1rem;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #E9E9E9;
+        }
+
+        input{
+            width: 95%;
+            height: 22px;
+            padding: 0.9rem;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            border: 0;
+            margin: 10px;
+        }
+
+        
+        input:focus{
+            outline: none;
+            box-shadow: 0 0 10px #009E9E;
+        }
+        
+        a{
+            color: #E9E9E9;
+            font-size: 0.8rem;
+            margin-top: 5px;
+        }
 
         .container {
             background-color: #E9E9E9;
@@ -13,7 +50,7 @@
         }
 
         .header {
-            padding: 2.5rem;
+            padding: 0.9rem;
         }
 
         .flex-container {
@@ -61,21 +98,6 @@
             margin-left: 0.9rem;
         }
 
-        .column1-button {
-            border: none;
-            width: 100%;
-            font-size: 1rem;
-            border-radius: 4px;
-            background-color: #CCCCCC;
-            color: #006868;
-            padding: 0.9rem 2rem;
-            text-align: center;
-            margin-top: 1.2rem;
-            cursor: pointer;
-        }
-        .column1-button:hover{
-            background-color: #E9E9E9;
-        }
 
         .column2 {
             background-color: #009e9e;
@@ -83,9 +105,21 @@
             font-size: 0.9rem;
             padding: 0.6rem 1.2rem;
         }
+
         .column2-image{
             text-align: center;
         }
+
+        .form-register{
+            background-color: #006868;
+            padding: 1.2rem;
+            color: #FFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: space-around;
+        }
+
 
         @media screen and (max-width: 620px){
             html{
@@ -100,7 +134,15 @@
                 box-sizing: border-box;
             }
 
+            .register-line2{
+                box-sizing: border-box;
+            }
+
             .container{
                 width: 95%;
+            }
+
+            .header {
+                padding: 15px;
             }
         }
